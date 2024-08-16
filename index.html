@@ -18,7 +18,7 @@
     <nav>
         <ul>
             <li><a href="#about">A propos de moi</a></li>
-            <li><a href="#diplome">Dimplôme et formations</a></li>
+            <li><a href="#diplome">Diplômes et formations</a></li>
             <li><a href="#contact">Contactez-moi</a></li>
 
 
@@ -81,7 +81,7 @@
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script type="text/javascript">
         (function() {
-            emailjs.init("TON_USER_ID"); // Remplace TON_USER_ID par ton User ID EmailJS
+            emailjs.init("zihOe2C4dMQX6Bxod"); // Remplace TON_USER_ID par ton User ID EmailJS
         })();
     </script>
 
@@ -108,7 +108,7 @@
             document.getElementById('contact-form').addEventListener('submit', function(event) {
                 event.preventDefault(); // Empêche le rechargement de la page
 
-                emailjs.sendForm('TON_SERVICE_ID', 'TON_TEMPLATE_ID', this)
+                emailjs.sendForm('service_gxl6bcg', 'template_dtont1c', this)
                     .then(function() {
                         alert('Message envoyé avec succès !');
                     }, function(error) {
