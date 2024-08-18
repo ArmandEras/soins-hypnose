@@ -6,26 +6,52 @@ body {
     color: #333;
     background-color: #f4f4f4;
     font-size: 1rem;
+
 }
 
 header {
-    background-image: url('drapeau.jpg'); /* Remplace 'ton-image.jpg' par le chemin de ton image */
+    background-image: url('drapeau.jpg'); /* Remplace 'drapeau.jpg' par le chemin de ton image */
     background-size: cover; /* Couvre tout l'espace du header */
     background-position: center; /* Centrer l'image */
     background-repeat: no-repeat; /* Empêche la répétition de l'image */
     height: 50vh; /* Hauteur du header en fonction de la hauteur de la fenêtre */
-    width: 98.5%;
+    width: 99%;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white; /* Texte blanc pour contraster avec l'image */
-    padding: 1rem;
+    padding: 0rem;
     font-size: 2rem;
-    border-radius: 8px;
-
-
+    border-radius: 8px; /* Coins arrondis */
+    border: 10px solid black; /* Ajoute une bordure blanche de 5 pixels */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Ombre autour du header pour le faire ressortir */
 }
+
+#quote-container {
+    background-color: #ADD8E6; /* Gris bleuté */
+    padding: 20px; /* Espacement interne */
+    border-radius: 8px; /* Coins arrondis */
+    color: #333; /* Couleur du texte pour un bon contraste */
+    text-align: center; /* Centrer le texte */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère pour donner du relief */
+    font-family: Arial, sans-serif; /* Police du texte */
+}
+
+#quote-container h1 {
+    margin-bottom: 10px; /* Espacement sous le titre */
+}
+
+#quote-container h2 {
+    font-style: italic; /* Italique pour la citation */
+    margin-bottom: 10px; /* Espacement sous la citation */
+}
+
+#quote-container p {
+    font-weight: bold; /* Texte en gras pour l'auteur */
+    margin-top: 10px; /* Espacement au-dessus du nom de l'auteur */
+}
+
 
 .header-content {
     padding: 20px;
@@ -33,33 +59,77 @@ header {
     border-radius: 8px;
 }
 
+#about {
+    background-color: #ADD8E6; /* Bleu clair */
+    padding: 20px; /* Espacement interne autour du contenu */
+    border-radius: 8px; /* Coins arrondis */
+    color: #333; /* Couleur du texte pour un bon contraste */
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+#diplome {
+    background-color: #ADD8E6; /* Bleu clair */
+    padding: 20px; /* Espacement interne autour du contenu */
+    border-radius: 8px; /* Coins arrondis */
+    color: #333; /* Couleur du texte pour un bon contraste */
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+#services {
+    background-color: #ADD8E6; /* Bleu clair */
+    padding: 20px; /* Espacement interne autour du contenu */
+    border-radius: 8px; /* Coins arrondis */
+    color: #333; /* Couleur du texte pour un bon contraste */
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+#contact {
+    background-color: #ADD8E6; /* Bleu clair */
+    padding: 20px; /* Espacement interne autour du contenu */
+    border-radius: 8px; /* Coins arrondis */
+    color: #333; /* Couleur du texte pour un bon contraste */
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
 h1, p {
     margin: 0;
 }
+
+
 
 nav ul {
     list-style: none;
     padding: 0;
     display: flex;
     justify-content: center;
-    background-color: #444;
+    background-color: #ADD8E6; /* Fond bleu clair */
     flex-wrap: wrap;
     border-radius: 8px;
-    padding: 1rem;
+    color: black; /* Couleur du texte en noir */
 }
 
 nav ul li {
-    margin: 0.5rem 1rem;
+    margin: 0 15px; /* Espacement entre les éléments de la liste */
     border-radius: 8px;
     padding: 1rem;
 }
 
 nav ul li a {
-    /*padding: 2rem;
-    background-color: #333;*/
-    color: white;
     border-radius: 8px;
     font-size: 1rem;
+    color: black; /* Couleur du texte des liens en noir */
+    text-decoration: none; /* Supprime le soulignement des liens */
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Soulignement des liens au survol */
 }
 
 section {
@@ -68,6 +138,8 @@ section {
     margin: 1rem;
     border-radius: 8px;
     font-size: 1rem;
+
+
 }
 
 footer {
@@ -164,7 +236,7 @@ form {
 
 .form-group input,
 .form-group textarea {
-    width: 100%;
+    width: 96%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
