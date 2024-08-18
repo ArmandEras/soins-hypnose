@@ -6,7 +6,6 @@ body {
     color: #333;
     background-color: #f4f4f4;
     font-size: 1rem;
-
 }
 
 header {
@@ -15,7 +14,7 @@ header {
     background-position: center; /* Centrer l'image */
     background-repeat: no-repeat; /* Empêche la répétition de l'image */
     height: 50vh; /* Hauteur du header en fonction de la hauteur de la fenêtre */
-    width: 99%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,13 +22,12 @@ header {
     color: white; /* Texte blanc pour contraster avec l'image */
     padding: 0rem;
     font-size: 2rem;
-    border-radius: 8px; /* Coins arrondis */
-    border: 10px solid black; /* Ajoute une bordure blanche de 5 pixels */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Ombre autour du header pour le faire ressortir */
 }
 
 #quote-container {
     background-color: #ADD8E6; /* Gris bleuté */
+    opacity: 0.9;
     padding: 20px; /* Espacement interne */
     border-radius: 8px; /* Coins arrondis */
     color: #333; /* Couleur du texte pour un bon contraste */
@@ -60,40 +58,51 @@ header {
 }
 
 #about {
-    background-color: #ADD8E6; /* Bleu clair */
+    display:inline-block;
+    background-color: #ADD8E6; /* Gris bleuté */
+    opacity: 0.9;
     padding: 20px; /* Espacement interne autour du contenu */
     border-radius: 8px; /* Coins arrondis */
     color: #333; /* Couleur du texte pour un bon contraste */
     font-size: 16px;
     line-height: 1.6;
+    width: 50%;
 }
 
 #diplome {
-    background-color: #ADD8E6; /* Bleu clair */
+    display:inline-block;
+    background-color: #ADD8E6; /* Gris bleuté */
+    opacity: 0.9;
     padding: 20px; /* Espacement interne autour du contenu */
     border-radius: 8px; /* Coins arrondis */
     color: #333; /* Couleur du texte pour un bon contraste */
     font-size: 16px;
     line-height: 1.6;
+    width: 40%;
 }
 
 #services {
-    background-color: #ADD8E6; /* Bleu clair */
+    background-color: #ADD8E6; /* Gris bleuté */
+    opacity: 0.9;
     padding: 20px; /* Espacement interne autour du contenu */
     border-radius: 8px; /* Coins arrondis */
     color: #333; /* Couleur du texte pour un bon contraste */
     font-size: 16px;
     line-height: 1.6;
+    width: 40%;
 }
 
 
 #contact {
-    background-color: #ADD8E6; /* Bleu clair */
+    display:inline-block;
+    background-color: #ADD8E6; /* Gris bleuté */
+    opacity: 0.9;
     padding: 20px; /* Espacement interne autour du contenu */
     border-radius: 8px; /* Coins arrondis */
     color: #333; /* Couleur du texte pour un bon contraste */
     font-size: 16px;
     line-height: 1.6;
+    width: 40%;
 }
 
 
@@ -104,32 +113,19 @@ h1, p {
 
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    background-color: #ADD8E6; /* Fond bleu clair */
-    flex-wrap: wrap;
-    border-radius: 8px;
-    color: black; /* Couleur du texte en noir */
+    display: inline;
+    list-style-type: none;
+    position: flex;
+        font-size: 16px;
 }
 
 nav ul li {
-    margin: 0 15px; /* Espacement entre les éléments de la liste */
-    border-radius: 8px;
-    padding: 1rem;
+    margin: 20px;
 }
 
 nav ul li a {
-    border-radius: 8px;
-    font-size: 1rem;
-    color: black; /* Couleur du texte des liens en noir */
-    text-decoration: none; /* Supprime le soulignement des liens */
-    padding: 10px;
-}
-
-nav ul li a:hover {
-    text-decoration: underline; /* Soulignement des liens au survol */
+    color: ghostwhite;
+    text-decoration: none;
 }
 
 section {
@@ -146,7 +142,6 @@ footer {
     padding: 2rem;
     background-color: #333;
     color: white;
-    border-radius: 8px;
     font-size: 1rem;
 }
 
