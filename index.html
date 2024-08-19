@@ -13,8 +13,25 @@
             <p>Véronique Arfi</p><br>
             <h3>Hypnose/libération des mémoires traumatiques</h3>
         </div>
-    </header>
+    <script type="text/javascript">
+        let lastScrollTop = 0;
+        const header = document.querySelector("header");
 
+        window.addEventListener("scroll", function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+                // L'utilisateur fait défiler vers le bas
+                header.classList.add("hidden");
+            } else {
+                // L'utilisateur fait défiler vers le haut
+                header.classList.remove("hidden");
+            }
+
+            lastScrollTop = scrollTop;
+        });
+    </script>
+    </header>
     <nav>
         <ul>
             <li><a href="#about">A propos de moi</a></li>
@@ -22,11 +39,11 @@
             <li><a href="#contact">Contactez-moi</a></li>
         </ul>
     </nav>
-
+    <p></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></p> 
     <section id="quote-container">
         <h1>« Qui regarde dehors rêve. Qui regarde à l'intérieur se réveille »</h1>
-    </hr>
-        <p>- Carl Gustav Jung</p>
+        <hr />
+        <p> Carl Gustav Jung</p>
     </section>
 
     <section id="about">
