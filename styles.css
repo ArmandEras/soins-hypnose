@@ -112,6 +112,11 @@ section {
     margin-top: 10px; /* Espacement au-dessus du nom de l'auteur */
 }
 
+#quote-container hr {
+    width: 5%;
+    margin-left: 0; /* Aligner à gauche en supprimant les marges */
+}
+
 form {
     max-width: 500px;
     margin: 20px auto;
