@@ -28,7 +28,6 @@ body {
 }
 
 header {
-    width: 100%;
     height: 50vh;
     background-image: url('drapeau.jpg');
     background-size: cover;
@@ -42,8 +41,20 @@ header {
     padding: 1rem;
     font-size: 2rem;
     margin-bottom: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff; /* Changez la couleur de fond selon vos besoins */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Légère ombre pour l'effet de surélévation */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Transition pour l'effet de défilement */
 }
 
+header.hidden {
+    transform: translateY(-100%); /* Déplace le header vers le haut */
+    opacity: 0; /* Le rendre invisible */
+}
 
 .header-content {
     padding: 20px;
@@ -56,27 +67,44 @@ h1, p {
     margin: 0;
 }
 
+nav {
+    position: fixed; /* Fixe la nav en haut de la page */
+    top: 0; /* Aligne la nav en haut */
+    left: 0; /* Aligne la nav à gauche */
+    width: 100%; /* Fait en sorte que la nav prenne toute la largeur */
+    z-index: 1000; /* Assure que la nav reste au-dessus des autres éléments */
+    background-color: #444; /* Conserve la couleur de fond */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ajoute une légère ombre pour distinguer la nav du reste de la page */
+}
+
 nav ul {
     list-style: none;
-    padding: 0;
+    margin: 0;
+    padding: 0.2rem;
     display: flex;
     justify-content: center;
-    background-color: #444;
     flex-wrap: wrap;
-    padding: 1rem;
     width: 100%;
-    margin-top: 0;
 }
 
 nav ul li {
     margin: 0.5rem 1rem;
-    padding: 1rem;
 }
 
 nav ul li a {
     color: white;
     font-size: 1rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
 }
+
+nav ul li a:hover {
+    background-color: #333;
+    border-radius: 4px;
+}
+
+
 
 section {
     padding: 2rem;
@@ -98,6 +126,15 @@ section {
     font-size: 16px;
     line-height: 1.6;
     box-sizing: border-box; /* Inclut le padding dans la largeur totale */
+}
+
+.quote-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 1rem;
 }
 
 #quote-container h1 {
@@ -175,16 +212,6 @@ footer {
     width: 100%;
 }
 
-
-.quote-container {
-    text-align: center;
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    margin: 1rem;
-}
-
 /* Media Queries for responsiveness */
 
 @media (max-width: 768px) {
@@ -192,17 +219,23 @@ footer {
         font-size: 1.5rem;
         padding: 0.5rem;
     }
+
+    .header-content {
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.5); /* Un fond semi-transparent pour améliorer la lisibilité du texte */
+        border-radius: 8px;
+    }
     
     nav ul {
         font-size: 0.9rem;
-        padding: 1rem;
+        padding: 0.01rem;
         flex-direction: column;
         width: 100%;
     }
     
     nav ul li {
         font-size: 0.9rem;
-        padding: 1rem;
+        padding: 0.01rem;
         margin: 0rem 0;
     }
     
@@ -223,6 +256,12 @@ footer {
         font-size: 1.2rem;
     }
     
+    .header-content {
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.5); /* Un fond semi-transparent pour améliorer la lisibilité du texte */
+        border-radius: 8px;
+    }
+
     section {
         padding: 0.5rem;
         margin: 0.5rem;
