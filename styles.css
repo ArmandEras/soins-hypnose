@@ -116,7 +116,7 @@ section {
 }
 
 
-#quote-container, #about, #diplome, #services, #contact {
+#quote-container, #about, #diplome, #services, #contact, #domaine {
     width: calc(100% - 40px); /* S'assure que l'élément ne dépasse pas la largeur de la page */
     padding: 20px;
     margin: 20px auto;
@@ -156,6 +156,7 @@ section {
     width: 15%;
     margin-left: 0; /* Aligner à gauche en supprimant les marges */
 }
+
 
 #otherAdvices {
     display: flex; /* Dispose les divs en ligne */
@@ -205,8 +206,6 @@ form {
     margin-bottom: 5px;
     font-weight: bold;
 }
-
-
 
 .form-group input,
 
@@ -300,12 +299,8 @@ footer {
         padding: 0.5rem;
         margin: 0.5rem;
     }
-    
-    footer {
-        font-size: 0.8rem;
-    }
 
-        #otherAdvices {
+    #otherAdvices {
         padding: 10px; /* Réduit le padding sur les petits écrans */
     }
 
@@ -320,6 +315,10 @@ footer {
 
     #otherAdvices p {
         font-size: 1em; /* Réduit la taille du texte pour les petits écrans */
+    }
+    
+    footer {
+        font-size: 0.8rem;
     }
     
     .quote-container {
